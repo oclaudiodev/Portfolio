@@ -1,0 +1,149 @@
+.inicio {
+    padding: 40px;
+    background-color: #0d0d0d; // preto de fundo
+    color: #f5f5f5; // branco suave
+    font-family: 'Poppins', sans-serif;
+  
+    .apresentacao {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+  
+      .texto {
+        max-width: 600px;
+  
+        h1 {
+          font-size: 2.5rem;
+          color: #fff;
+  
+          span {
+            color: #e50914; // vermelho principal
+          }
+        }
+  
+        h2 {
+          color: #ccc;
+          font-weight: 500;
+          margin-bottom: 10px;
+        }
+  
+        p {
+          margin: 20px 0;
+          line-height: 1.6;
+          color: #ddd;
+        }
+  
+        .botoes {
+          display: flex;
+          gap: 15px;
+          margin-top: 20px;
+  
+          .btn {
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            background-color: #e50914;
+            color: #fff;
+            font-weight: 600;
+            transition: 0.3s;
+  
+            &:hover {
+              background-color: #b0070f;
+            }
+  
+            &.btn-secundario {
+              background-color: transparent;
+              border: 2px solid #e50914;
+              color: #e50914;
+  
+              &:hover {
+                background-color: #e50914;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+  
+      .imagem {
+        img {
+          width: 250px;
+          border-radius: 50%;
+          box-shadow: 0 0 20px rgba(229, 9, 20, 0.5);
+          margin-top: 20px;
+        }
+      }
+    }
+  
+    .projetos {
+      margin-top: 80px;
+      text-align: center;
+  
+      h2 {
+        margin-bottom: 30px;
+        color: #e50914;
+      }
+  
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+  
+        .card {
+          background-color: #1a1a1a;
+          padding: 20px;
+          border-radius: 15px;
+          width: 280px;
+          box-shadow: 0 0 10px rgba(229, 9, 20, 0.1);
+          transition: transform 0.3s, box-shadow 0.3s;
+  
+          &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 15px rgba(229, 9, 20, 0.4);
+          }
+  
+          h3 {
+            color: #e50914;
+            margin-bottom: 10px;
+          }
+  
+          p {
+            color: #ccc;
+            font-size: 0.95rem;
+          }
+        }
+      }
+    }
+  
+    .contato {
+      margin-top: 80px;
+      text-align: center;
+  
+      h2 {
+        color: #e50914;
+        margin-bottom: 10px;
+      }
+  
+      p {
+        color: #ddd;
+        margin-bottom: 20px;
+      }
+  
+      .btn {
+        background-color: #e50914;
+        padding: 12px 25px;
+        border-radius: 25px;
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        transition: 0.3s;
+  
+        &:hover {
+          background-color: #b0070f;
+        }
+      }
+    }
+  }
+  
