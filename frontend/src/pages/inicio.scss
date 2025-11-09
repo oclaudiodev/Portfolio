@@ -1,7 +1,7 @@
 .inicio {
     padding: 40px;
-    background-color: #0d0d0d; // preto de fundo
-    color: #f5f5f5; // branco suave
+    background-color: #0d0d0d;
+    color: #f5f5f5;
     font-family: 'Poppins', sans-serif;
   
     .apresentacao {
@@ -18,7 +18,7 @@
           color: #fff;
   
           span {
-            color: #e50914; // vermelho principal
+            color: #e50914;
           }
         }
   
@@ -143,6 +143,105 @@
         &:hover {
           background-color: #b0070f;
         }
+      }
+    }
+  
+    /* ======== RESPONSIVIDADE ======== */
+  
+    @media (max-width: 1024px) {
+      .apresentacao {
+        flex-direction: column;
+        text-align: center;
+  
+        .texto {
+          max-width: 100%;
+  
+          h1 {
+            font-size: 2rem;
+          }
+  
+          p {
+            font-size: 1rem;
+          }
+  
+          .botoes {
+            justify-content: center;
+          }
+        }
+  
+        .imagem img {
+          width: 220px;
+          margin-top: 30px;
+        }
+      }
+  
+      .projetos .cards {
+        gap: 15px;
+  
+        .card {
+          width: 240px;
+        }
+      }
+    }
+  
+    @media (max-width: 768px) {
+      padding: 30px;
+  
+      .apresentacao {
+        .texto {
+          h1 {
+            font-size: 1.8rem;
+          }
+          h2 {
+            font-size: 1.1rem;
+          }
+        }
+  
+        .imagem img {
+          width: 180px;
+        }
+      }
+  
+      .projetos .cards .card {
+        width: 90%;
+      }
+    }
+  
+    @media (max-width: 480px) {
+      padding: 20px;
+  
+      .apresentacao {
+        .texto {
+          h1 {
+            font-size: 1.6rem;
+          }
+  
+          p {
+            font-size: 0.9rem;
+          }
+  
+          .botoes {
+            flex-direction: column;
+            gap: 10px;
+          }
+        }
+  
+        .imagem img {
+          width: 150px;
+        }
+      }
+  
+      .projetos h2 {
+        font-size: 1.3rem;
+      }
+  
+      .contato h2 {
+        font-size: 1.3rem;
+      }
+  
+      .contato .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
       }
     }
   }
